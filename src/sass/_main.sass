@@ -1,0 +1,53 @@
+// section Service
+#services
+    .containerImg
+     background-position: center
+     height: 250px
+     width: 100%
+     h2
+        font-size: 40px
+        font-family: poppins
+        hr
+            height: 100px
+        
+.cardImg1
+     background-image: url("../../public/img/services/service-1.jpg")
+.cardImg2
+    background-image: url("../../public/img/services/service-2.jpg")
+.cardImg3
+    background-image: url("../../public/img/services/slider-3.jpg")
+
+// section Produits
+#produits
+    margin-top: 50px
+    margin-bottom: 50px
+    h2
+        text-align: center
+    .reduc
+        text-decoration: line-through
+
+span
+    font-family: poppins
+    font-weight: bold
+    margin-top: 50px
+    
+
+.articleImg
+    position: relative
+    overflow: hidden
+.articleImg::before
+    content: "view detail"
+    display: flex
+    justify-content: center
+    align-items: center
+    color: white
+    position: absolute
+    left: 0
+    height: 70px
+    width: 50%
+    background-color: black
+    bottom: -70px
+    transition: 1s
+.articleImg:hover::before
+    bottom: 0
+        
